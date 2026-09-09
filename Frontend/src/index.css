@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+select{
+    color-scheme:light;
+}
+
+select option{
+    background-color:#fefbfb;
+    color:#374151;
+    font-weight:500;
+}
+
+select option:hover,
+select option:checked{
+    background-color:#f3eaf5;
+    color:#3730a3;
+    font-weight:600;
+}
+
+.filter-scroll::-webkit-scrollbar{
+    width:14px;
+    height:6px;
+}
+
+.filter-scroll::-webkit-scrollbar-track{
+    background:#fff8d3;
+}
+
+.filter-scroll::-webkit-scrollbar-thumb{
+    background:#dfa920;
+    border-radius:9999px;
+}
+
+.filter-scroll::-webkit-scrollbar-thumb:hover{
+    background:#f1ba21;
+}

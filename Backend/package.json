@@ -1,0 +1,23 @@
+{
+  "name": "previsdata",
+  "version": "1.0.0",
+  "description": "data visualization dashboard using rest api",
+  "license": "ISC",
+  "author": "Srijan",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
