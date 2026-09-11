@@ -11,7 +11,6 @@ export const useDashboard = (filters = {}) => {
             try {
                 setLoading(true);
                 setError(null);
-
                 const data = await getDashboardData(filters);
                 setDashboardData(data);
             } catch (err) {

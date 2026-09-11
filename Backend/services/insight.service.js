@@ -44,7 +44,7 @@ export const getDashboardData =async(filters)=>{
                     {
                         $group:{
                             _id:"$topic",
-                            value:{$avg:"$intensity" },
+                            value:{$avg:"$intensity"},
                         },
                     },
                     {
@@ -59,8 +59,8 @@ export const getDashboardData =async(filters)=>{
                         },
                     },
                     {
-                        $group: {
-                            _id: "$country",
+                        $group:{
+                            _id:"$country",
                             value:{$avg:"$relevance"},
                         },
                     },
@@ -70,9 +70,9 @@ export const getDashboardData =async(filters)=>{
                 ],
                 likelihoodByRegion:[
                     {
-                        $match: {
+                        $match:{
                             region:{$ne:""},
-                            likelihood:{ $ne: null },
+                            likelihood:{$ne:null},
                         },
                     },
                     {

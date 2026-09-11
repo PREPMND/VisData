@@ -7,7 +7,7 @@ export const useInsights = (filters = {}) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchData=async()=>{
             try {
                 setLoading(true);
                 setError(null);

@@ -8,7 +8,7 @@ node_modules/
 
 # Data
 data/
-
+TOPIC.txt
 # Build files
 dist/
 build/

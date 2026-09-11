@@ -34,7 +34,7 @@ export default function Dashboard() {
     }
 
     return (
-        <div className="p-2 md:p-6 bg-gray-50 min-h-screen scrollbar-none!">
+        <div className="p-2 md:p-6 bg-gray-50 overflow-x-hidden min-h-screen scrollbar-none!">
             <h1 className="text-2xl font-bold text-gray-900 text-center">Vis Data</h1>
 
             <FilterPanel
