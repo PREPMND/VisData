@@ -134,16 +134,15 @@ export const getDashboardData =async(filters)=>{
                         $sort:{count:-1},
                     },
                 ],
-
-                insightsByCity: [
+                insightsByCity:[
                     {
-                        $match: {
-                            city: {$ne:""},
+                        $match:{
+                            city:{$ne:""},
                         },
                     },
                     {
-                        $group: {
-                            _id: "$city",
+                        $group:{
+                            _id:"$city",
                             count:{$sum:1},
                         },
                     },

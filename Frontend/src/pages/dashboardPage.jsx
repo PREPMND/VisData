@@ -26,7 +26,14 @@ export default function Dashboard() {
         error,
     } = useDashboard(filters);
     if (loading || filtersLoading) {
-        return <h2>Loading...</h2>;
+        return (
+            <div className="flex flex-col items-center justify-center mt-20 space-y-3 animate-fade-in">
+                <div className="w-8 h-8 border-2 border-slate-200 border-t-indigo-500 rounded-full animate-spin"></div>
+                <p className="text-sm font-medium text-slate-400 tracking-wide animate-pulse">
+                    Preparing your dashboard...
+                </p>
+            </div>
+        );
     }
 
     if (error) {
@@ -44,7 +51,7 @@ export default function Dashboard() {
                 clearFilters={clearFilters}
             />
             <InsightsByYear
-            data={dashboardData?.insightsByEndYear}
+                data={dashboardData?.insightsByEndYear}
             />
             <IntensityByTopic
                 data={dashboardData?.intensityByTopic}
@@ -56,9 +63,8 @@ export default function Dashboard() {
             <LikelihoodByRegion
                 data={dashboardData?.likelihoodByRegion}
             />
-        
+
         </div>
     );
 }
-            
-       
+
